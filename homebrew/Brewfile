@@ -1,0 +1,23 @@
+# Packages
+brew autojump
+brew imagemagick
+brew macvim --with-lua
+brew mysql
+brew node
+brew python
+brew tmux
+
+# Apps: Cask
+cask appcleaner
+cask dropbox
+cask google-chrome
+cask iterm2
+cask karabiner
+
+# Apps: App Store
+appstore Cinch
+appstore Dash 3
+appstore Daisy Disk
+appstore Growl
+appstore Memory Monitor
+
