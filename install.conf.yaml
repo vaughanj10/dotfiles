@@ -8,6 +8,6 @@
     ~/.vimrc: vim/vimrc
     ~/.zsh: zsh/
     ~/.zshrc: zsh/zshrc
-    /usr/local/share/zsh/site-functions/prompt_pure_setup: zsh/pure.zsh
-    /usr/local/share/zsh/site-functions/async: zsh/async.zsh
+    /usr/local/share/zsh/site-functions/prompt_pure_setup: zsh/themes/pure.zsh
+    /usr/local/share/zsh/site-functions/async: zsh/functions/async.zsh
 
