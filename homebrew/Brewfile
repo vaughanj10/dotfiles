@@ -1,5 +1,6 @@
 # Packages
 brew autojump
+brew fzf
 brew imagemagick
 brew macvim --with-lua
 brew mysql
