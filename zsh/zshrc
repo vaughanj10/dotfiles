@@ -1,13 +1,16 @@
-autoload -U promptinit && promptinit
+# ALIASES
+
+source ${HOME}/.zsh_aliases
 
 # PROMPT
+autoload -U promptinit && promptinit
 prompt pure
 
 # PLUGINS
 
 # syntax highlighting
 
-source ${(q-)PWD}/plugins/syntax/zsh-syntax-highlighting.zsh
+source ${HOME}/.dotfiles/zsh/plugins/syntax/zsh-syntax-highlighting.zsh
 
 # autojump
 
