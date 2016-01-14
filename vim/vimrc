@@ -1,0 +1,33 @@
+set nocompatible
+filetype off
+
+colorscheme spacegray               " spacegray.vim color scheme
+syntax enable                       " enable syntax processing
+set number
+set showcmd
+set cursorline
+filetype indent on
+set wildmenu
+set lazyredraw
+set showmatch
+
+set incsearch
+set hlsearch
+
+let mapleader=","
+
+nnoremap j gj
+nnoremap k gk
+
+set tabstop=2                       " number of visual spaces per tab
+set softtabstop=2                   " number of spaces when editing
+set expandtab
+
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+call vundle#end()
+filetype plugin indent on
