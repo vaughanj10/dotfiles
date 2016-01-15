@@ -1,7 +1,7 @@
 " Use Vim settings
 set nocompatible
 
-" ==== General Config ====
+" ===== General Config =====
 
 set number                        "Line numbers
 set backspace=2                   "Allow backspace in insert mode
@@ -19,19 +19,19 @@ syntax on
 let mapleader=","
 let g:mapleader=","
 
-" ==== Vundle initialization ====
+" ===== Vundle initialization =====
 
 if filereadable(expand("~/.vim/vundles.vim"))
   source ~/.vim/vundles.vim
 endif
 
-" ==== Turn off swap files ====
+" ===== Turn off swap files =====
 
 set noswapfile
 set nobackup
 set nowb
 
-" ==== Persistent Undo ====
+" ===== Persistent Undo =====
 
 if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
   silent !mkdir ~/.vim/backups > /dev/null 2>&1
@@ -39,7 +39,7 @@ if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
   set undofile
 endif
 
-" ==== Indentation ====
+" ===== Indentation =====
 
 set autoindent
 set smartindent
@@ -97,8 +97,10 @@ set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 " ==== Filetype settings =====
+
 filetype plugin indent on
 filetype off
 
 " ==== Color scheme ====
+
 colorscheme spacegray               " spacegray.vim color scheme
