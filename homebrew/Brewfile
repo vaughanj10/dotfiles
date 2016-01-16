@@ -1,24 +1,41 @@
 # Packages
-brew autojump
-brew fzf
-brew imagemagick
-brew macvim --with-lua
-brew mysql
-brew node
-brew python
-brew tmux
+brew 'autojump'
+brew 'fzf'
+brew 'git'
+brew 'imagemagick'
+brew 'mysql'
+brew 'node'
+brew 'python'
+brew 'tmux'
+brew 'vim --with-lua'
+brew 'zsh'
 
 # Apps: Cask
-cask appcleaner
-cask dropbox
-cask google-chrome
-cask iterm2
-cask karabiner
+cask '1password'
+cask 'airfoil'
+cask 'alfred'
+cask 'appcleaner'
+cask 'bartender'
+cask 'carbon-copy-cloner'
+cask 'dropbox'
+cask 'fantastical'
+cask 'fuze'
+cask 'google-chrome'
+cask 'growlnotify'
+cask 'iterm2'
+cask 'karabiner'
+cask 'nvalt'
+cask 'screenhero'
+cask 'sizeup'
+cask 'sublime-text'
+cask 'transmit'
+cask 'vlc'
 
 # Apps: App Store
-appstore Cinch
-appstore Dash 3
-appstore Daisy Disk
-appstore Growl
-appstore Memory Monitor
-
+# 'Cinch'
+# 'Daisy Disk'
+# 'Dash 3'
+# 'Growl'
+# 'Kindle'
+# 'Memory Monitor'
+# 'Wunderlist'
