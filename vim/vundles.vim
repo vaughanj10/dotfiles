@@ -5,7 +5,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 
-runtime search.vundle
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'justinmk/vim-sneak'
 
 call vundle#end()
 

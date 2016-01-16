@@ -1,6 +1,5 @@
 # ALIASES
-
-source ${HOME}/.zsh_aliases
+source ~/.zsh_aliases
 
 # PROMPT
 autoload -U promptinit && promptinit
@@ -8,9 +7,14 @@ prompt pure
 
 # PLUGINS
 
-# syntax highlighting
+# ANTIGEN
+source ~/.zsh/plugins/antigen/antigen.zsh
 
-source ${HOME}/.dotfiles/zsh/plugins/syntax/zsh-syntax-highlighting.zsh
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle colorize
+
+antigen apply
 
 # autojump
 
@@ -19,3 +23,9 @@ source ${HOME}/.dotfiles/zsh/plugins/syntax/zsh-syntax-highlighting.zsh
 # fuzzy finder
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# zsh-history-substring-search
+
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down

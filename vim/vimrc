@@ -1,5 +1,5 @@
-" Use Vim settings
 set nocompatible
+filetype off
 
 " ===== General Config =====
 
@@ -21,9 +21,16 @@ let g:mapleader=","
 
 " ===== Vundle initialization =====
 
-if filereadable(expand("~/.vim/vundles.vim"))
-  source ~/.vim/vundles.vim
-endif
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()
+
+filetype plugin indent on
 
 " ===== Turn off swap files =====
 
@@ -52,9 +59,6 @@ set expandtab
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
-
-filetype plugin on
-filetype indent on
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
@@ -95,11 +99,6 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
-
-" ==== Filetype settings =====
-
-filetype plugin indent on
-filetype off
 
 " ==== Color scheme ====
 
