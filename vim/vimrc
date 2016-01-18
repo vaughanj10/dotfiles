@@ -19,6 +19,9 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'dag/vim2hs'
+NeoBundle 'scrooloose/syntastic'
 
 call neobundle#end()
 
@@ -126,6 +129,17 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
+
+" ==== Syntastic ====
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ==== Color scheme ====
 

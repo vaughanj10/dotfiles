@@ -1,7 +1,10 @@
 ctrlp.vim
 neobundle.vim
 nerdtree
+syntastic
 vim-airline
 vim-easymotion
 vim-fugitive
 vim-gitgutter
+vim-ruby
+vim2hs
