@@ -1,0 +1,6 @@
+neobundle.vim
+nerdtree
+vim-airline
+vim-easymotion
+vim-fugitive
+vim-gitgutter

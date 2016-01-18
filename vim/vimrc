@@ -1,5 +1,29 @@
-set nocompatible
+" ===== NeoBundle =====
+
+if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
+
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
 filetype off
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'easymotion/vim-easymotion'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'airblade/vim-gitgutter'
+
+call neobundle#end()
+
+filetype plugin indent on
+
+NeoBundleCheck
 
 " ===== General Config =====
 
@@ -11,26 +35,11 @@ set showmode                      "Show current mode at bottom
 set gcr=a:blinkon0                "Disable cursor blink
 set visualbell                    "No sounds
 set autoread                      "Reload filed changed outside vim
-
 set hidden                        "Buffers can exist in background
-
 syntax on
 
 let mapleader=","
 let g:mapleader=","
-
-" ===== Vundle initialization =====
-
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-
-call vundle#end()
-
-filetype plugin indent on
 
 " ===== Turn off swap files =====
 
@@ -100,15 +109,33 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
+" ==== Status line ====
+
+set laststatus=2
+
+" ==== NERDTree ====
+
+" Map CTRL-n to toggle NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Autoclose vim if only NERDTree open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" ==== Vim Airline ====
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme='bubblegum'
+
 " ==== Color scheme ====
 
-set background=dark
+set t_Co=256
 colorscheme base16-railscasts
+set background=dark
 
 highlight clear SignColumn
 highlight VertSplit    ctermbg=236
 highlight ColorColumn  ctermbg=237
-highlight LineNr       ctermbg=236 ctermfg=240
+highlight LineNr       ctermbg=0   ctermfg=240
 highlight CursorLineNr ctermbg=236 ctermfg=240
 highlight CursorLine   ctermbg=236
 highlight StatusLineNC ctermbg=238 ctermfg=0
