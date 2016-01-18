@@ -2,6 +2,7 @@
 brew 'autojump'
 brew 'fzf'
 brew 'git'
+brew 'htop'
 brew 'imagemagick'
 brew 'mysql'
 brew 'node'
