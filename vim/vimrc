@@ -18,6 +18,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'kien/ctrlp.vim'
 
 call neobundle#end()
 
