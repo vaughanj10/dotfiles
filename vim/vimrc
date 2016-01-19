@@ -40,6 +40,7 @@ set gcr=a:blinkon0                "Disable cursor blink
 set visualbell                    "No sounds
 set autoread                      "Reload filed changed outside vim
 set hidden                        "Buffers can exist in background
+set clipboard=unnamed             "Allow vim to copy to OSX clipboard
 syntax on
 
 let mapleader=","
