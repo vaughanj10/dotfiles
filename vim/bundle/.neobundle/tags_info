@@ -1,5 +1,6 @@
 base16-vim
 ctrlp.vim
+elm.vim
 neobundle.vim
 nerdtree
 syntastic
@@ -7,6 +8,7 @@ tmuxline.vim
 vim-airline
 vim-commentary
 vim-easymotion
+vim-elixir
 vim-fugitive
 vim-gitgutter
 vim-indent-guides

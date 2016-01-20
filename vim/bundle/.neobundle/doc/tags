@@ -310,6 +310,12 @@ EasyMotion_smartsign	easymotion.txt	/*EasyMotion_smartsign*
 EasyMotion_space_jump_first	easymotion.txt	/*EasyMotion_space_jump_first*
 EasyMotion_use_migemo	easymotion.txt	/*EasyMotion_use_migemo*
 EasyMotion_use_upper	easymotion.txt	/*EasyMotion_use_upper*
+ElmEvalLine	elm-vim.txt	/*ElmEvalLine*
+ElmEvalSelection	elm-vim.txt	/*ElmEvalSelection*
+ElmMake	elm-vim.txt	/*ElmMake*
+ElmMakeCurrentFile	elm-vim.txt	/*ElmMakeCurrentFile*
+ElmMakeMain	elm-vim.txt	/*ElmMakeMain*
+ElmRepl	elm-vim.txt	/*ElmRepl*
 GitGutter	gitgutter.txt	/*GitGutter*
 GitGutterCommands	gitgutter.txt	/*GitGutterCommands*
 GitGutterContents	gitgutter.txt	/*GitGutterContents*
@@ -467,6 +473,9 @@ easymotion-usage	easymotion.txt	/*easymotion-usage*
 easymotion-within-line	easymotion.txt	/*easymotion-within-line*
 easymotion-{find}n	easymotion.txt	/*easymotion-{find}n*
 easymotion.txt	easymotion.txt	/*easymotion.txt*
+elm-features	elm-vim.txt	/*elm-features*
+elm-requirements	elm-vim.txt	/*elm-requirements*
+elm-vim.txt	elm-vim.txt	/*elm-vim.txt*
 filter-overrides	syntastic.txt	/*filter-overrides*
 ft-ruby-omni	ft-ruby-omni.txt	/*ft-ruby-omni*
 ft-ruby-syntax	ft-ruby-syntax.txt	/*ft-ruby-syntax*
