@@ -3,6 +3,7 @@ ctrlp.vim
 neobundle.vim
 nerdtree
 syntastic
+tmuxline.vim
 vim-airline
 vim-easymotion
 vim-fugitive

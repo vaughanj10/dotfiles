@@ -23,6 +23,7 @@ NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'dag/vim2hs'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'edkolev/tmuxline.vim'
 
 call neobundle#end()
 

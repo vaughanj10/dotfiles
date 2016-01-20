@@ -197,6 +197,8 @@
 :SyntasticReset	syntastic.txt	/*:SyntasticReset*
 :SyntasticSetLoclist	syntastic.txt	/*:SyntasticSetLoclist*
 :SyntasticToggleMode	syntastic.txt	/*:SyntasticToggleMode*
+:Tmuxline	tmuxline.txt	/*:Tmuxline*
+:TmuxlineSnapshot	tmuxline.txt	/*:TmuxlineSnapshot*
 <Over>(em-jumpback)	easymotion.txt	/*<Over>(em-jumpback)*
 <Over>(em-openallfold)	easymotion.txt	/*<Over>(em-openallfold)*
 <Over>(em-scroll-b)	easymotion.txt	/*<Over>(em-scroll-b)*
@@ -736,6 +738,12 @@ syntastic-ycm	syntastic.txt	/*syntastic-ycm*
 syntastic-zsh	syntastic.txt	/*syntastic-zsh*
 syntastic.txt	syntastic.txt	/*syntastic.txt*
 t,	easymotion.txt	/*t,*
+tmuxline	tmuxline.txt	/*tmuxline*
+tmuxline-api	tmuxline.txt	/*tmuxline-api*
+tmuxline-commands	tmuxline.txt	/*tmuxline-commands*
+tmuxline-configuration	tmuxline.txt	/*tmuxline-configuration*
+tmuxline-license	tmuxline.txt	/*tmuxline-license*
+tmuxline.txt	tmuxline.txt	/*tmuxline.txt*
 unite-action-neobundle-lazy	neobundle.txt	/*unite-action-neobundle-lazy*
 unite-action-neobundle-search	neobundle.txt	/*unite-action-neobundle-search*
 unite-kind-neobundle	neobundle.txt	/*unite-kind-neobundle*
