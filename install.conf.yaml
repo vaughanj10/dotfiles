@@ -3,15 +3,17 @@
 - link:
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/tmuxline: tmux/tmuxline
     ~/.vim: vim/
     ~/.vimrc: vim/vimrc
-    
     ~/.zsh: zsh/
     ~/.zshrc: zsh/zshrc
     ~/.zsh_aliases: zsh/aliases.zsh
     /usr/local/share/zsh/site-functions/prompt_pure_setup: zsh/themes/pure.zsh
     /usr/local/share/zsh/site-functions/async: zsh/functions/async.zsh
 
+- shell:
+  - curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > vim/install.sh
+  - sh vim/install.sh
+  - vim +NeoBundleInstall +qall
