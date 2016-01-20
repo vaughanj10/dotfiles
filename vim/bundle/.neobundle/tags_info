@@ -5,8 +5,10 @@ nerdtree
 syntastic
 tmuxline.vim
 vim-airline
+vim-commentary
 vim-easymotion
 vim-fugitive
 vim-gitgutter
+vim-indent-guides
 vim-ruby
 vim2hs

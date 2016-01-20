@@ -24,6 +24,8 @@ NeoBundle 'dag/vim2hs'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'edkolev/tmuxline.vim'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 call neobundle#end()
 
