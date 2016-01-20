@@ -3,9 +3,12 @@
 - link:
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
+
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux/tmuxline: tmux/tmuxline
     ~/.vim: vim/
     ~/.vimrc: vim/vimrc
+    
     ~/.zsh: zsh/
     ~/.zshrc: zsh/zshrc
     ~/.zsh_aliases: zsh/aliases.zsh
