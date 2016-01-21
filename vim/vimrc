@@ -28,6 +28,7 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'lambdatoast/elm.vim'
+NeoBundle 'jiangmiao/auto-pairs'
 
 call neobundle#end()
 
