@@ -29,6 +29,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'lambdatoast/elm.vim'
 NeoBundle 'jiangmiao/auto-pairs'
+NeoBundle 'junegunn/vim-easy-align'
 
 call neobundle#end()
 
@@ -38,6 +39,7 @@ NeoBundleCheck
 
 " ===== General Config =====
 
+set viminfo='100,n$HOME/.vim/files/info/viminfo'
 set number                        "Line numbers
 set backspace=2                   "Allow backspace in insert mode
 set history=1000                  "cmdline history
