@@ -8,6 +8,7 @@ syntastic
 tmuxline.vim
 vim-airline
 vim-commentary
+vim-easy-align
 vim-easymotion
 vim-elixir
 vim-fugitive

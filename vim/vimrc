@@ -155,6 +155,11 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
+" ==== Easy Align ====
+
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
 " ==== Color scheme ====
 
 set t_Co=256
