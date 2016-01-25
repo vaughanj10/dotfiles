@@ -19,6 +19,7 @@ alias gpr='git pull --rebase'
 
 alias gl='git log'
 
+alias gbs='git branch | cut -c 3- | selecta | xargs git checkout'
 
 # VIM
 
