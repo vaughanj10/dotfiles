@@ -2,6 +2,7 @@ auto-pairs
 base16-vim
 ctrlp.vim
 elm.vim
+ghcmod-vim
 neobundle.vim
 nerdtree
 syntastic
@@ -16,3 +17,4 @@ vim-gitgutter
 vim-indent-guides
 vim-ruby
 vim2hs
+vimproc.vim

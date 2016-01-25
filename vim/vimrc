@@ -21,6 +21,16 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'dag/vim2hs'
+NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'Shougo/vimproc.vim', {
+      \ 'build' : {
+      \     'windows' : 'tools\\update-dll-mingw',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make',
+      \     'linux' : 'make',
+      \     'unix' : 'gmake',
+      \   },
+      \ }
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'edkolev/tmuxline.vim'
@@ -165,6 +175,8 @@ let g:syntastic_check_on_wq = 0
 " ruby
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+
+" haskell
 
 " ==== Easy Align ====
 
