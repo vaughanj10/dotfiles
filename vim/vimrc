@@ -39,7 +39,6 @@ NeoBundleCheck
 
 " ===== General Config =====
 
-set viminfo='100,n$HOME/.vim/files/info/viminfo'
 set number                        "Line numbers
 set backspace=2                   "Allow backspace in insert mode
 set history=1000                  "cmdline history
@@ -54,6 +53,17 @@ syntax on
 
 let mapleader=","
 let g:mapleader=","
+
+" ===== Buffers =====
+
+" Open new buffer
+map <C-t> :enew<CR>
+" Next / previous buffer
+map <C-l> :bnext<CR>
+map <C-h> :bprevious<CR>
+
+" Close current buffer
+map <C-d> :bd<CR>
 
 " ===== Turn off swap files =====
 
@@ -139,7 +149,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
-
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#buffer_min_count=2
 " ==== Syntastic ====
 
 set statusline+=%#warningmsg#
