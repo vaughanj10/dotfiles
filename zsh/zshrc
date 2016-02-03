@@ -1,10 +1,6 @@
 # ALIASES
 source ~/.zsh_aliases
 
-# PROMPT
-autoload -U promptinit && promptinit
-prompt pure
-
 # PLUGINS
 
 # ANTIGEN
@@ -38,3 +34,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+autoload -U promptinit && promptinit
+prompt pure

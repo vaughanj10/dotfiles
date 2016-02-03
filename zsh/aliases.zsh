@@ -19,8 +19,13 @@ alias gpr='git pull --rebase'
 
 alias gl='git log'
 
+alias gb='git branch'
 alias gbs='git branch | cut -c 3- | selecta | xargs git checkout'
 
 # VIM
 
 alias vim="/usr/local/Cellar/vim/7.4.1063/bin/vim"
+
+# MYSQL
+
+alias msql='mysql -uroot'
