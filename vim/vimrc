@@ -20,7 +20,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'dag/vim2hs'
+NeoBundle 'neovimhaskell/haskell-vim'
 NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
@@ -34,12 +34,12 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'edkolev/tmuxline.vim'
-NeoBundle 'tpope/vim-commentary'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'lambdatoast/elm.vim'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'junegunn/vim-easy-align'
+NeoBundle 'tomtom/tcomment_vim'
 
 call neobundle#end()
 
@@ -50,6 +50,9 @@ NeoBundleCheck
 " ===== General Config =====
 
 set number                        "Line numbers
+set relativenumber
+set numberwidth=2
+set cursorline
 set backspace=2                   "Allow backspace in insert mode
 set history=1000                  "cmdline history
 set showcmd                       "Show incomplete cmds at bottom
@@ -166,10 +169,11 @@ let g:airline#extensions#tabline#buffer_min_count=2
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': []  }
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " ruby

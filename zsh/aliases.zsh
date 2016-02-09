@@ -17,7 +17,7 @@ alias gp='git push'
 alias gpu='git pull'
 alias gpr='git pull --rebase'
 
-alias gl='git log'
+alias gl='git lg'
 
 alias gb='git branch'
 alias gbs='git branch | cut -c 3- | selecta | xargs git checkout'
