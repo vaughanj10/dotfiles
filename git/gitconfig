@@ -2,6 +2,7 @@
         name = James Vaughan
         email = vaughanj10@gmail.com
 [alias]
+        d = !git diff --color $@ | diff-so-fancy
         co = checkout
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
@@ -26,3 +27,6 @@
         autocorrect = 1
 [push]
         default = simple
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
