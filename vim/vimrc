@@ -40,6 +40,7 @@ NeoBundle 'lambdatoast/elm.vim'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'kchmck/vim-coffee-script'
 
 call neobundle#end()
 
