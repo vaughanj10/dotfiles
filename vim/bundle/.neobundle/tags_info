@@ -18,4 +18,5 @@ vim-fugitive
 vim-gitgutter
 vim-indent-guides
 vim-ruby
+vim-scala
 vimproc.vim

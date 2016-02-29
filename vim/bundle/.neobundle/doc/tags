@@ -76,6 +76,8 @@
 'g:ctrlp_user_command'	ctrlp.txt	/*'g:ctrlp_user_command'*
 'g:ctrlp_working_path_mode'	ctrlp.txt	/*'g:ctrlp_working_path_mode'*
 'g:loaded_ctrlp'	ctrlp.txt	/*'g:loaded_ctrlp'*
+'g:scala_use_builtin_tagbar_defs'	scala.txt	/*'g:scala_use_builtin_tagbar_defs'*
+'g:scala_use_default_keymappings'	scala.txt	/*'g:scala_use_default_keymappings'*
 'g:syntastic_<filetype>_checkers'	syntastic.txt	/*'g:syntastic_<filetype>_checkers'*
 'indent_guides_auto_colors'	indent_guides.txt	/*'indent_guides_auto_colors'*
 'indent_guides_color_change_percent'	indent_guides.txt	/*'indent_guides_color_change_percent'*
@@ -218,6 +220,7 @@
 :NeoBundleUpdate	neobundle.txt	/*:NeoBundleUpdate*
 :NeoBundleUpdate!	neobundle.txt	/*:NeoBundleUpdate!*
 :NeoBundleUpdatesLog	neobundle.txt	/*:NeoBundleUpdatesLog*
+:SortScalaImports	scala.txt	/*:SortScalaImports*
 :SyntasticCheck	syntastic.txt	/*:SyntasticCheck*
 :SyntasticInfo	syntastic.txt	/*:SyntasticInfo*
 :SyntasticReset	syntastic.txt	/*:SyntasticReset*
@@ -915,6 +918,15 @@ ruby_no_expensive	ft-ruby-syntax.txt	/*ruby_no_expensive*
 ruby_operators	ft-ruby-syntax.txt	/*ruby_operators*
 ruby_space_errors	ft-ruby-syntax.txt	/*ruby_space_errors*
 ruby_spellcheck_strings	ft-ruby-syntax.txt	/*ruby_spellcheck_strings*
+scala	scala.txt	/*scala*
+scala-commands	scala.txt	/*scala-commands*
+scala-credits	scala.txt	/*scala-credits*
+scala-leader-fr	scala.txt	/*scala-leader-fr*
+scala-leader-fs	scala.txt	/*scala-leader-fs*
+scala-leader-ft	scala.txt	/*scala-leader-ft*
+scala-mappings	scala.txt	/*scala-mappings*
+scala-options	scala.txt	/*scala-options*
+scala.txt	scala.txt	/*scala.txt*
 syntastic	syntastic.txt	/*syntastic*
 syntastic-about	syntastic.txt	/*syntastic-about*
 syntastic-aggregating-errors	syntastic.txt	/*syntastic-aggregating-errors*
