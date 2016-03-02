@@ -47,12 +47,13 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
+# Prompt
+
 autoload -U promptinit && promptinit
 prompt pure
 
-export WHEREAT_KEY=A9EEAACB
-export WHEREAT_ROOT=/Users/jamesvaughan/Documents/Code/whereat
+# Project exports
 
-export WHEREAT_SCRIPTS=/Users/jamesvaughan/Documents/Code/whereat/whereat-bash
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export REACT_EDITOR=sublime
+for file in ~/.zsh/exports/*; do
+  source "$file"
+done
