@@ -1,3 +1,9 @@
+# ZSH SETTINGS
+
+# history
+
+alias h='history 1'
+
 # GIT
 
 alias g='git'

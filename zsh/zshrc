@@ -1,4 +1,4 @@
-# ALIASES
+#ALIASES
 source ~/.zsh_aliases
 
 # PLUGINS
@@ -32,10 +32,11 @@ plugins=( zsh-syntax-highlighting )
 
 # History
 
-SAVEHIST=1000
 HISTFILE=~/.zsh_history
-setopt inc_append_history
-setopt share_history
+SAVEHIST=1000
+HISTSIZE=1000
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 # RVM
 
@@ -48,3 +49,10 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-railscasts.dark.sh"
 
 autoload -U promptinit && promptinit
 prompt pure
+
+export WHEREAT_KEY=A9EEAACB
+export WHEREAT_ROOT=/Users/jamesvaughan/Documents/Code/whereat
+
+export WHEREAT_SCRIPTS=/Users/jamesvaughan/Documents/Code/whereat/whereat-bash
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export REACT_EDITOR=sublime

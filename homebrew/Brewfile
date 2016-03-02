@@ -15,6 +15,7 @@ brew 'selecta'
 brew 'the_silver_searcher'
 brew 'tmux'
 brew 'vim --with-lua'
+brew 'watchman'
 brew 'wemux'
 brew 'zsh'
 
