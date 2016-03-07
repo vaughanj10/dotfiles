@@ -21,6 +21,7 @@ brew 'zsh'
 
 # Apps: Cask
 cask '1password'
+cask 'amethyst'
 cask 'airfoil'
 cask 'alfred'
 cask 'appcleaner'
