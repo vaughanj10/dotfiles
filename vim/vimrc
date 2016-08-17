@@ -13,6 +13,7 @@ filetype off
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
 NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'bling/vim-airline'
@@ -42,6 +43,7 @@ NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'tpope/vim-surround'
 
 call neobundle#end()
 
@@ -151,6 +153,13 @@ set smartcase       " ...unless we type a capital
 " ==== Status line ====
 
 set laststatus=2
+
+" ==== CTRL-P ====
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.sass-cache$|\.hg$\|\.svn$\|\.yardoc\|public$|log\|tmp$',
+  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
+  \ }
 
 " ==== NERDTree ====
 
