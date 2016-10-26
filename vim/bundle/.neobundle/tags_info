@@ -10,6 +10,7 @@ syntastic
 tcomment_vim
 tmuxline.vim
 vim-airline
+vim-airline-themes
 vim-coffee-script
 vim-easy-align
 vim-easymotion
