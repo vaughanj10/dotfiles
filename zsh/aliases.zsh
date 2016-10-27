@@ -45,3 +45,8 @@ alias vim="/usr/local/Cellar/vim/7.4.1063/bin/vim"
 # MYSQL
 
 alias msql='mysql -uroot'
+
+# DOCKER
+
+alias dsa='docker stop $(docker ps -a -q)'
+alias dka='docker rm -f $(docker ps -a -q)'
