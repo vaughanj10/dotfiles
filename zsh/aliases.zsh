@@ -40,7 +40,7 @@ alias gcob='git checkout --branch'
 
 # VIM
 
-alias vim="/usr/local/Cellar/vim/7.4.1063/bin/vim"
+alias vim="/usr/local/Cellar/vim/8.0.0013/bin/vim"
 
 # MYSQL
 
