@@ -48,5 +48,12 @@ alias msql='mysql -uroot'
 
 # DOCKER
 
-alias dsa='docker stop $(docker ps -a -q)'
-alias dka='docker rm -f $(docker ps -a -q)'
+alias dsc='docker stop $(docker ps -a -q)'
+alias drc='docker rm -f $(docker ps -a -q)'
+alias dkillc='dsc && drc'
+alias dri='docker rmi $(docker images -q)'
+alias dkillall='dsc && drc && dri'
+
+# OPENCONNECT
+
+alias saksvpn='sudo openconnect --user=vndstania --authgroup="General Access" connect.saksinc.com'
