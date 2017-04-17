@@ -1,3 +1,5 @@
+export PATH="$PATH:/usr/local/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:$HOME/.rvm/bin"
+
 #ALIASES
 source ~/.zsh_aliases
 
@@ -14,7 +16,7 @@ antigen apply
 
 # autojump
 
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh  ] && . /usr/local/etc/profile.d/autojump.sh
 
 # fuzzy finder
 
