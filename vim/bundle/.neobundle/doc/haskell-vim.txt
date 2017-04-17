@@ -7,7 +7,7 @@ CONTENTS                                                   *haskell-vim-contents
 
   1. Features      |haskell-vim-features|
   2. Configuration |haskell-vim-configuration|
-  3. Highlighting  |haskell-vim-ndentation|
+  3. Highlighting  |haskell-vim-indentation|
 
 ===============================================================================
 FEATURES                                                   *haskell-vim-features*
@@ -39,6 +39,7 @@ the according variable to 1 in the `.vimrc`.
   * |haskell-vim-enable-typeroles|
   * |haskell-vim-enable-static-pointers|
   * |haskell-vim-classic-highlighting|
+  * |haskell-vim-disable-TH|
 
                                                *haskell-vim-enable-quantification*
 `g:haskell_enable_quantification`   Enables highlighting of `forall`.
@@ -65,11 +66,17 @@ the according variable to 1 in the `.vimrc`.
 switch to a more traditional mode by setting `g:haskell_classic_highlighting`
 to 1.
 
+                                                *haskell-vim-disable-TH*
+Disabling Template Haskell and Quasiquoting syntax is possible by setting
+`g:haskell_disable_TH` to `1`.
+
 ===============================================================================
 INDENTATION                                             *haskell-vim-indentation*
 
 To configure indentation in `haskell-vim` you can use the following variables to
 change indentation depth, just add the according line to your `.vimrc`.
+
+You can disable the indentation by setting `g:haskell_indent_disable` to `1`.
 
 Haskell~
 
@@ -77,6 +84,8 @@ Haskell~
   * |haskell-vim-indent-case|
   * |haskell-vim-indent-let|
   * |haskell-vim-indent-where|
+  * |haskell-vim-indent-before-where|
+  * |haskell-vim-indent-after-bare-where|
   * |haskell-vim-indent-do|
   * |haskell-vim-indent-in|
   * |haskell-vim-indent-guard|
@@ -106,6 +115,18 @@ Haskell~
 
         where f :: Int -> Int
         >>>>>>f x = x
+<
+                                                 *haskell-vim-indent-before-where*
+* let g:haskell_indent_before_where = 2 >
+
+        foo
+        >>where
+<
+                                             *haskell-vim-indent-after-bare-where*
+* let g:haskell_indent_after_bare_where = 2 >
+
+        where
+        >>foo
 <
                                                            *haskell-vim-indent-do*
 * let g:haskell_indent_do = 3 >

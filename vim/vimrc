@@ -1,16 +1,16 @@
 " ===== NeoBundle =====
 
-if has('vim_starting')
-  if &compatible
-    set nocompatible
-  endif
-
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
 filetype off
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+" Required:
+set runtimepath+=/Users/jamesvaughan/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/Users/jamesvaughan/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -203,6 +203,6 @@ nmap ga <Plug>(EasyAlign)
 
 set t_Co=256
 set background=dark
-let base16colorspace=256
+set base16colorspace=256
 
 colorscheme base16-railscasts
