@@ -43,6 +43,7 @@ setopt SHARE_HISTORY
 # RVM
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Base16 Shell
 
@@ -64,3 +65,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export NVM_DIR="/Users/jamesvaughan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by travis gem
+[ -f /Users/jamesvaughan/.travis/travis.sh ] && source /Users/jamesvaughan/.travis/travis.sh
