@@ -12,6 +12,7 @@
     ~/.zsh: zsh/
     ~/.zshrc: zsh/zshrc
     ~/.zsh_aliases: zsh/aliases.zsh
+    ~/.zsh_secrets: zsh/secrets.zsh
     /usr/local/share/zsh/site-functions/prompt_pure_setup: zsh/themes/pure.zsh
     /usr/local/share/zsh/site-functions/async: zsh/functions/async.zsh
 
