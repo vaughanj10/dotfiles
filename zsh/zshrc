@@ -55,16 +55,12 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 autoload -U promptinit && promptinit
 prompt pure
 
-# Project exports
-
-for file in ~/.zsh/exports/*; do
-  source "$file"
-done
-
+# iTerm shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# NVM
 export NVM_DIR="/Users/jamesvaughan/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # added by travis gem
 [ -f /Users/jamesvaughan/.travis/travis.sh ] && source /Users/jamesvaughan/.travis/travis.sh
