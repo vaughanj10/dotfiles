@@ -2,16 +2,20 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/lo
 
 # ALIASES
 source ~/.zsh_aliases
-source ~/.zsh_secrets
+
+# SECRETS
+if [[ -a  ~/.zsh_secrets ]]; then
+  source ~/.zsh_secrets
+fi
 
 # PLUGINS
 source ~/.zsh/plugins/fzf-key-bindings.zsh
 source ~/.zsh/plugins/interactive-cd.zsh
+source ~/.zsh/plugins/zsh-autosuggestions.zsh
 
 # ANTIGEN
 source ~/.zsh/plugins/antigen/antigen.zsh
 
-antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle colorize
 
@@ -23,12 +27,6 @@ source /usr/local/share/chruby/chruby.sh
 # autojump
 
 [ -f /usr/local/etc/profile.d/autojump.sh  ] && . /usr/local/etc/profile.d/autojump.sh
-
-# zsh-history-substring-search
-
-zmodload zsh/terminfo
-bindkey "$terminfo[cuu1]" history-substring-search-up
-bindkey "$terminfo[cud1]" history-substring-search-down
 
 # Plugins
 
