@@ -1,51 +1,46 @@
-# Packages
-brew 'autojump'
-brew 'diff-so-fancy'
-brew 'fzf'
-brew 'git'
-brew 'htop'
-brew 'imagemagick'
-brew 'mysql'
-brew 'node'
-brew 'python'
-brew 'reattach-to-user-namespace'
-brew 'sbt'
-brew 'scala'
-brew 'selecta'
-brew 'the_silver_searcher'
-brew 'tmux'
-brew 'vim --with-lua'
-brew 'watchman'
-brew 'wemux'
-brew 'zsh'
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+brew "autoconf"
+brew "autojump"
+brew "automake"
+brew "openssl"
+brew "awscli"
+brew "bison"
+brew "chruby"
+brew "coreutils"
+brew "diff-so-fancy"
+brew "elixir"
+brew "exercism"
+brew "fish"
+brew "fzf"
+brew "gdbm"
+brew "ghostscript"
+brew "libffi"
+brew "gnupg"
+brew "gpg-agent"
+brew "httperf"
+brew "libtool"
+brew "imagemagick"
+brew "jq"
+brew "libyaml"
+brew "node"
+brew "openssl@1.1"
+brew "pkg-config"
+brew "readline"
+brew "postgresql"
+brew "postgresql@9.6"
+brew "redis", restart_service: true
+brew "ruby-install"
+brew "terminal-notifier"
+brew "vim"
+brew "watch"
+brew "wget"
+brew "yarn", link: false
+brew "zsh"
+brew "heroku/brew/heroku"
+cask "haskell-platform"
+cask "ngrok"
 
-# Apps: Cask
-cask '1password'
-cask 'amethyst'
-cask 'airfoil'
-cask 'alfred'
-cask 'appcleaner'
-cask 'bartender'
-cask 'carbon-copy-cloner'
-cask 'dropbox'
-cask 'fantastical'
-cask 'fuze'
-cask 'google-chrome'
-cask 'growlnotify'
-cask 'iterm2'
-cask 'karabiner'
-cask 'nvalt'
-cask 'screenhero'
-cask 'sizeup'
-cask 'sublime-text'
-cask 'transmit'
-cask 'vlc'
-
-# Apps: App Store
-# 'Cinch'
-# 'Daisy Disk'
-# 'Dash 3'
-# 'Growl'
-# 'Kindle'
-# 'Memory Monitor'
-# 'Wunderlist'
