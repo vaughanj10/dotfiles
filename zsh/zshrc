@@ -3,6 +3,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/lo
 #ALIASES
 source ~/.zsh_aliases
 source ~/.zsh_secrets
+source ~/.zsh/plugins/fzf-key-bindings.zsh
 
 # PLUGINS
 
@@ -69,21 +70,3 @@ export NVM_DIR="/Users/jamesvaughan/.nvm"
 # added by travis gem
 [ -f /Users/jamesvaughan/.travis/travis.sh ] && source /Users/jamesvaughan/.travis/travis.sh
 
-# brew installed fzf
-function history-fzf() {
-  local tac
-
-  if which tac > /dev/null; then
-    tac="tac"
-  else
-    tac="tail -r"
-  fi
-
-  BUFFER=$(history -n 1 | eval $tac | fzf --query "$LBUFFER")
-  CURSOR=$#BUFFER
-
-  zle reset-prompt
-}
-
-zle -N history-fzf
-bindkey '^r' history-fzf

@@ -54,3 +54,5 @@ alias dkillc='dsc && drc'
 alias dri='docker rmi $(docker images -q)'
 alias dkillall='dsc && drc && dri'
 
+# Fzf
+alias fzp='fzf --preview="head -$LINES {}"'

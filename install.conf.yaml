@@ -3,10 +3,11 @@
 - link:
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-    ~/.irbrc: ruby/irbrc
     ~/.irssi: irssi/
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.tmux/tmuxline: tmux/tmuxline
+    ~/.tmux/tmuxline:
+      create: true
+      path: tmux/tmuxline
     ~/.vim: vim/
     ~/.vimrc: vim/vimrc
     ~/.zsh: zsh/
