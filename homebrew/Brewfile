@@ -44,3 +44,19 @@ brew "heroku/brew/heroku"
 cask "haskell-platform"
 cask "ngrok"
 
+cask '1password'
+cask 'alfred'
+cask 'appcleaner'
+cask 'bartender'
+cask 'carbon-copy-cloner'
+cask 'dropbox'
+cask 'fantastical'
+cask 'growlnotify'
+cask 'iterm2'
+cask 'karabiner'
+cask 'nvalt'
+cask 'screenhero'
+cask 'sizeup'
+cask 'sublime-text'
+cask 'transmit'
+cask 'vlc'
