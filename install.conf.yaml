@@ -4,6 +4,7 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
     ~/.irssi: irssi/
+    ~/.ssh: ssh/
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/tmuxline:
       create: true
